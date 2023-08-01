@@ -1,0 +1,98 @@
+html,body{
+    font-family: 'Sono', sans-serif;
+}
+
+.conatiner{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.pricing-plan{
+    flex: 1;
+    max-width: 400px;
+    height : 15rem;
+    background-color : #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0.8rem;
+    box-shadow: 10px 10px 20px grey;
+}
+
+#pricing-basic{
+    border-radius: 0.8rem;
+   background-image: linear-gradient(to left, blueviolet , pink);
+   box-shadow: 4px 4px 15px grey;
+   padding: 2px;
+}
+
+#pricing-standard{
+    border-radius: 0.8rem;
+   background-image: linear-gradient(to left, blueviolet , orange);
+   box-shadow: 4px 4px 15px grey;
+   padding: 2px;
+}
+
+#pricing-premium{
+    border-radius: 0.8rem;
+   background-image: linear-gradient(to left, blueviolet , yellow);
+   box-shadow: 4px 4px 15px grey;
+   padding: 2px;
+}
+
+.button{
+    display: inline;
+    background-color: #f60;
+    border :0;
+    padding: 8px;
+    border-radius: 0.3rem;
+    text-align: center;
+    color: white;
+    box-shadow:  0 0 5px grey;
+}
+
+.pricing-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price{
+    font-size: 40px;
+    font-weight: bold;
+}
+li{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+@media (max-width : 1250px) {
+    .conatiner{
+        flex-direction: column;
+        height : 100%;
+    }
+    
+    .pricing-title{
+        font-size: 20px;
+    }
+    .price{
+        font-size: 36px;
+    }
+
+    #pricing-basic{
+        padding: 8px;
+    }
+
+    #pricing-standard{
+        padding: 8px;
+    }
+
+    #pricing-premium{
+        padding: 8px;
+    }
+}
